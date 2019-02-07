@@ -9,6 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
 html {
     color: #222;
@@ -97,23 +98,138 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.MainContent{
-  width: 100%;
-  height: 100%;
-  position: relative;
+/* Global Body Styles */
+body{
+    background-color: #585752;
+    font-family: 'Roboto', sans-serif;
 }
 
-.HeroContent{
+.concrete_overlay{
+  background-image: url('../img/Textured_Background.png');
+  background-repeat: repeat;
+
+}
+
+/* Header */
+header{
+  background-color: #585752;
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 
-.CoolBox{
-
+.header_logo{
+  width: 67.2px;
+  height: auto;
 }
 
+/* Herorsection Styles */
+.Herorsection{
+  background-image: url('../img/AFI_hero.jpg');
+  width: 100%;
+  height: 720px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Concert Details Section*/
+.Concert_Details{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.Lineup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  flex-direction: column;
+}
+
+.Lineup h1{
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.Lineup p{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.Lineup h2{
+  font-size: 74px;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+}
+
+.Concert_Dates{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px;
+  color: #fff;
+}
+
+.Dates{
+  margin: 20px;
+  font-weight: 500;
+}
+
+.Dates ul{
+  list-style: none;
+}
+
+.Dates ul li{
+  padding: 3px;
+  font-size: 24px;
+}
+
+/* Tickets */
+
+.Tickets{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Tickets button{
+  width: 230px;
+  height: 60px;
+  border: 3px solid #fff;
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Tickets button:hover{
+  border: 3px solid #f89500;
+  color: #f89500;
+}
+
+
+.Tickets a{
+  color: #fff;
+  font-weight: 900;
+  font-size: 30px;
+}
 
 
 
@@ -212,61 +328,30 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media (max-width: 1440px) and (min-width: 769px){
+@media screen and (max-width: 1280px){
     /* Style adjustments for viewports that meet the condition */
-    .HeroContent{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
 
-    .CoolBox{
-      width: 475px;
-      height: 350px;
-      background-color: #466891;
-      margin:52px 93px 52px 93px;
-    }
 }
 
-@media (max-width: 768px) and (min-width: 376px) {
-  .HeroContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 1024px) {
 
-  .CoolBox{
-    width: 185px;
-    height: 190px;
-    background-color: #DA4A4A;
-    margin:32px;
-  }
 
 
 }
 
-@media (max-width: 375px) and (min-width: 0px) {
-  .HeroContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    flex-direction: column;
-    width: 80%;
+@media screen and (max-width: 768px) {
+  header{
+    height: 100px;
   }
 
-  .CoolBox{
-    width: 228px;
-    height: 190px;
-    background-color: #4DB199;
-    margin:54px;
+  .header_logo{
+    width: 80px;
   }
+
+}
+
+@media screen and (max-width: 360px) {
+
 
 }
 
