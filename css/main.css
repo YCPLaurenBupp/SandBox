@@ -368,11 +368,14 @@ header{
    margin: 0 auto;
    padding: 10px;
    color: #fff;
-}
+  }
 
 }
 
 @media screen and (max-width: 360px) {
+
+/* I Like to make sure all my nested styles in a media query are tabbed in a bit so I can tell where the media query ends */
+
   .Herorsection{
     height: 202px;
     margin-bottom: 20px;
@@ -402,25 +405,25 @@ header{
 
   .Concert_Dates{
   flex-direction: column;
-}
-
-.Dates{
-  width:100%;
-  margin: auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   }
 
-  .Dates ul{
-    list-style: none;
+  .Dates{
+    width:100%;
+    margin: auto;
     padding: 0;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
-.Dates ul li{
-  text-align: center;
-}
+    .Dates ul{
+      list-style: none;
+      padding: 0;
+    }
+
+  .Dates ul li{
+    text-align: center;
+  }
 
 }
 
