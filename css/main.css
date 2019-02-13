@@ -107,7 +107,6 @@ body{
 .concrete_overlay{
   background-image: url('../img/Textured_Background.png');
   background-repeat: repeat;
-
 }
 
 /* Header */
@@ -344,14 +343,84 @@ header{
     height: 100px;
   }
 
+  .Herorsection{
+    height: 432px;
+  }
+
   .header_logo{
     width: 80px;
   }
 
+  .Dates ul li{
+    font-size: 15px;
+    }
+
+  .Dates{
+    width:100%;
+    margin: 0;
+    }
+
+  .Concert_Dates{
+   width: 95%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding: 10px;
+   color: #fff;
+}
+
 }
 
 @media screen and (max-width: 360px) {
+  .Herorsection{
+    height: 202px;
+    margin-bottom: 20px;
+  }
 
+  header{
+    background-color: #585752;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .Lineup h1{
+    font-size: 50px;
+  }
+
+  .Lineup p{
+    font-size: 14px;
+  }
+
+  .Lineup h2{
+    font-size: 30px;
+  }
+
+  .Concert_Dates{
+  flex-direction: column;
+}
+
+.Dates{
+  width:100%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .Dates ul{
+    list-style: none;
+    padding: 0;
+  }
+
+.Dates ul li{
+  text-align: center;
+}
 
 }
 
